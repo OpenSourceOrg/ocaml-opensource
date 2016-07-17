@@ -1,0 +1,38 @@
+OASISFormat: 0.3
+Name: ocaml-opensource
+Version: 0.1.0
+Synopsis: API Wrapper that allows you to query the Open Source License API with OCaml
+Authors: Mehdi Dogguy <mehdi@dogguy.org>
+Copyrights: (C) 2016 Mehdi Dogguy
+License: MIT
+Homepage: http://github.com/mehdid/ocaml-opensource
+Description:
+ ocaml-opensource is an API Wrapper that allows you to query the Open
+ Source License API [1] with OCaml.
+ .
+ [1]: https://api.opensource.org/
+
+OCamlVersion: >= 3.12.0
+Plugins: META (0.3), DevFiles (0.4)
+BuildTools:ocamlbuild
+
+Library opensource
+ Path: src
+ BuildDepends: yojson, netclient, nettls-gnutls
+ Modules: Opensource
+
+Document "api"
+ Title: ocaml-opensource's documentation and API reference
+ Type: ocamlbuild (0.4)
+ BuildTools: ocamldoc
+ XOCamlbuildLibraries: opensource
+ XOCamlbuildPath: doc
+
+Document "distribution"
+ Title: "ocaml-opensource's README.md and CHANGES files"
+ DataFiles: README.md CHANGES
+
+SourceRepository head
+ Type: git
+ Location: git://github.com/mehdid/ocaml-opensource
+ Browser: http://github.com/mehdid/ocaml-opensource

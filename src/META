@@ -1,0 +1,13 @@
+# OASIS_START
+# DO NOT EDIT (digest: b4ec77aaf769ad34b4bc0dcdb803c5f2)
+version = "0.1.0"
+description =
+"API Wrapper that allows you to query the Open Source License API with OCaml"
+requires = "yojson netclient nettls-gnutls"
+archive(byte) = "opensource.cma"
+archive(byte, plugin) = "opensource.cma"
+archive(native) = "opensource.cmxa"
+archive(native, plugin) = "opensource.cmxs"
+exists_if = "opensource.cma"
+# OASIS_STOP
+
