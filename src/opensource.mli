@@ -23,9 +23,6 @@
 
 exception Error of string
 
-(** Generic function to request JSon data from API server *)
-val get_data : string -> string list -> Yojson.Basic.json
-
 (** Retrieve all licenses that are tagged with a given tag *)
 val get_licenses : string -> Yojson.Basic.json
 
