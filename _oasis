@@ -13,8 +13,8 @@ Description:
  [1]: https://api.opensource.org/
 
 OCamlVersion: >= 3.12.0
-Plugins: META (0.3), DevFiles (0.4)
-BuildTools:ocamlbuild
+Plugins: META (0.3), DevFiles (0.3)
+BuildTools: ocamlbuild
 
 Library opensource
  Path: src
@@ -23,16 +23,12 @@ Library opensource
 
 Document "api"
  Title: ocaml-opensource's documentation and API reference
- Type: ocamlbuild (0.4)
+ Type: ocamlbuild (0.3)
  BuildTools: ocamldoc
- XOCamlbuildLibraries: opensource
+ XOCamlbuildModules: src/Opensource
  XOCamlbuildPath: doc
-
-Document "distribution"
- Title: "ocaml-opensource's README.md and CHANGES files"
- DataFiles: README.md CHANGES
 
 SourceRepository head
  Type: git
- Location: git://github.com/mehdid/ocaml-opensource
- Browser: http://github.com/mehdid/ocaml-opensource
+ Location: https://github.com/mehdid/ocaml-opensource
+ Browser: https://github.com/mehdid/ocaml-opensource
