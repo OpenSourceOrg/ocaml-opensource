@@ -30,5 +30,5 @@ Document "api"
 
 SourceRepository head
  Type: git
- Location: https://github.com/mehdid/ocaml-opensource
+ Location: https://github.com/mehdid/ocaml-opensource.git
  Browser: https://github.com/mehdid/ocaml-opensource
